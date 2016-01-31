@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="sk">
+	<head>
+		<meta charset="utf-8">
+
+		<title>
+			Hanojska veža - pravidlá
+		</title>	
+		
+		<link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <link href='http://fonts.googleapis.com/css?family=Audiowide&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style_hanoi.css">
+		<script type="text/JavaScript" src="../../scripts_global/global.js"></script>
+        <script type="text/JavaScript" src="../../scripts_global/menu.js"></script>
+	</head>
+	<body onLoad="breadcrumbs(),menu_initialize()">
+		<nav>
+            <div id="navAlign">
+				<ul id="hlavne_menu"> </ul>
+                 <div id="datum">XX.XX.XXXX - Meno, Meno</div>
+            </div>
+        </nav>
+		<section id="container">
+            <div id="breadCrumbDiv">
+                <ul id="breadCrumbUl"></ul>
+           </div>
+			<header>
+				Pravidlá pre hru Hanojská veža
+			</header>
+			<div id="content">
+            <div id="pravidla">
+				<ul>
+                	<li>Hra je určená jedného hráča</li>
+                	<li>Hru začínate kliknutím na tlačidlo Začni hru</li>
+                    <li>Logická hra Hanojská veža má jednoduché pravidlá. Hra začína postavením pyramídy z hracích "kameňov" na jednu z drevených tyčiek</li>
+                    <li>Úlohou je potom presunúť celú pyramídu na inú tyčku(poslednú), avšak až pri dodržaní nasledovných pokynov:</li>
+                    <li>V jednom ťahu (na jedenkrát) je možné premiestniť iba jeden hrací kameň</li>
+                    <li>Väčší kameň nesmie byť nikdy položený na menší</li>
+                    <li>Ak hráč vyhrá (čiže úspešne premiestni vežu z prvej tyčky na poslednú tyčku), pripíše sa mu bod</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                                  
+                </ul>
+                </div><br/>
+                <div class="tlacidlo" id="zacat" onClick="window.location.href='hanoi.html'">Začni hru!</div>
+			</div>
+			<footer>
+				FEI STU v BA, Predmet: TIA, Autor: Jakub Kertýs &copy;
+			</footer>
+		</section>
+	</body>
+</html>

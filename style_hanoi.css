@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/***pre tlacidlo zacni hru v pravidlach***/
+.tlacidlo{
+width:15%;
+background-color: #CCC;
+text-align:center;
+font-weight:bold;
+border-radius: 10px;
+border:1px solid;
+margin-bottom:20px;
+box-shadow: 4px 4px 4px #888888;
+
+}
+.tlacidlo:hover{
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+#obal {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	width:1100px;
+	height:550px;
+	position:relative;
+	box-shadow: 0px 0px 10px black;
+	
+}
+
+#container_hanoi {
+	/*box-shadow: 0px 0px 10px black;*/
+	width:900px;
+	height:400px;
+	margin-left:100px;
+	margin-right:100px;
+	margin-top:100px;
+	margin-bottom:20px;
+	border-style:double;
+	position:absolute;
+}
+
+#spodok{
+	width:900px;
+	height:30px;
+	margin-top:360px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#300;
+	position:absolute;
+	}
+
+#tycka1 {
+	position:absolute;
+	width:20px;
+	height:220px;
+	margin-top:140px;
+	margin-left:150px;
+	box-shadow: 0px 0px 10px black;
+	background-color:#0C6;
+}
+
+#tycka2 {
+	position:absolute;
+	width:20px;
+	height:220px;
+	margin-top:140px;
+	margin-left:450px;
+	box-shadow: 0px 0px 10px black;
+	background-color:#0C6;
+}
+
+#tycka3 {
+	position:absolute;
+	width:20px;
+	height:220px;
+	margin-top:140px;
+	margin-left:750px;
+	box-shadow: 0px 0px 10px black;
+	background-color:#0C6;
+}
+
+.disk {
+	position:absolute;
+	border-style:solid ;
+	background-color:#9C0;
+	height:20px;
+}
+
+#disk0 {
+	width:240px;
+	top:335px;
+	left:40px;
+	visibility:hidden;
+	
+}
+
+#disk1 {
+	width:210px;
+	top:310px;
+	left:55px;
+	visibility:hidden;
+}
+
+#disk2 {
+	width:180px;
+	top:285px;
+	left:70px;
+	visibility:hidden;
+}
+
+#disk3 {
+	width:150px;
+	top:260px;
+	left:85px;
+	visibility:hidden;
+}
+
+
+#disk4 {
+	width:120px;
+	top:235px;
+	left:100px;
+	visibility:hidden;
+}
+
+#disk5 {
+	width:90px;
+	top:210px;
+	left:115px;
+	visibility:hidden;
+}
+
+#disk6 {
+	width:60px;
+	top:185px;
+	left:130px;
+	visibility:hidden;
+}
+
+/**navigacia*/
+#navig{
+	width:800px;
+	height:50px;
+	float:left;
+	margin-top:17px;
+	margin-left:150px;
+	margin-right:150px;
+	position:absolute;
+	padding-left:5px;
+	border:double;
+	}
+
+label { 
+	float:left; 
+	width:250px; 
+	margin-top:15px;
+	}
+#score {
+	box-shadow: 0px 0px 10px black;
+	border-radius: 5px;
+	margin-top:5px;
+	float:right;
+	width:213px;
+	height:100px;
+	margin-right:5px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#pocettahov {
+	width:200px;
+	margin-left:5px;
+	text-align:center;
+	margin-top:5px;
+	box-shadow: 0px 0px 10px green;
+	}
+
+#uroven{
+	width:200px;
+	text-align:center;
+	margin-left:5px;
+	margin-top:15px;
+	box-shadow: 0px 0px 10px green;
+}
+
+.button_hra{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	width:100px;
+	height:40px;
+	
+	background-color:inherit;
+}
+
+.button_hra:hover{
+	box-shadow: 0px 0px 10px green;
+	background-color:#999;
+	}
+
+#chartdiv {
+	display : none;
+	height:450px;
+	width:800px;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 0px 0px 10px black; 
+}
+
+

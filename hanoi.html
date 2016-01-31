@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name = "author" content = "Jakub Kertýs"> 
+<link rel="stylesheet" type="text/css" href="style_hanoi.css">
+<link rel="stylesheet" type="text/css" href="global.css">
+<link href='http://fonts.googleapis.com/css?family=Audiowide&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="dist/jquery.jqplot.min.css">
+
+<script language="javascript" type="text/javascript" src="dist/excanvas.js"></script>
+<script language="javascript" type="text/javascript" src="dist/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="dist/jquery.jqplot.min.js"></script>
+
+
+<script type="text/javascript" src="dist/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="dist/plugins/jqplot.highlighter.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="dist/jquery.jqplot.css"/>
+
+ 
+<!--  <script type="text/JavaScript" src="global.js"></script>
+<script type="text/JavaScript" src="menu.js"></script>
+<body onLoad=" breadcrumbs(),menu_initialize()"> -->
+<script type="text/JavaScript" src="hanoi_game.js"></script>
+<title>Hanojská veža</title>
+</head>
+
+<body>
+        
+        <section id="container">
+            
+        <div id="obal">
+         
+              <div id="container_hanoi"> 
+                    
+                <div id="tycka1" onClick="zapametaj(1)"></div>
+                <div id="tycka2" onClick="zapametaj(2)"></div>
+                <div id="tycka3" onClick="zapametaj(3)"></div>
+                <div id="spodok"></div>
+            
+                <div class="disk" id="disk0" onClick="zmen(0)"> </div> 
+                <div class="disk" id="disk1" onClick="zmen(1)"> </div> 
+                <div class="disk" id="disk2" onClick="zmen(2)"> </div> 
+                <div class="disk" id="disk3" onClick="zmen(3)"> </div> 
+                <div class="disk" id="disk4" onClick="zmen(4)"> </div>
+                <div class="disk" id="disk5" onClick="zmen(5)"> </div>
+                <div class="disk" id="disk6" onClick="zmen(6)"> </div>
+                
+                <div id="score"> 
+                	<div id="pocettahov">Tvoj počet ťahov : </div>
+                	<div id="uroven"> Zvolená uroveň obtiažnosti : </div>
+                </div> 
+                
+             </div> 
+                        
+             <div id="navig">
+                        
+                <label>  Zvoľ si počet diskov : 
+                <select id="pocetZvolenychDiskov" >
+                    <option  value="3" >3 disky </option>
+                    <option  value="4" selected >4 disky </option>
+                    <option  value="5" >5 diskov </option>
+                    <option  value="6" >6 diskov </option>
+                    <option  value="7" >7 diskov </option>
+                
+                </select>
+                </label>
+                
+                <button class="button_hra" onclick="zacniHru()" >Začni hru!</button> 
+                <button class="button_hra" onclick="kresliGraf()" >Vykresli graf</button>
+                <button class="button_hra" onclick="uloz()" >Ulož hru!</button>
+                <button class="button_hra" onclick="nacitaj()" >Načítaj hru!</button>
+                <button class="button_hra" onclick="vymaz_udaje()" >Vymaž údaje</button>
+       
+             </div>       
+      		
+         </div> 
+         <div id="chartdiv"></div>
+        <footer>
+			FEI STU v BA, Predmet: TIA, Autor: Jakub Kertýs &copy; 
+		</footer> 
+    </section>
+    
+</body>
+
+</html>
+
